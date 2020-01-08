@@ -2,37 +2,53 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link href="foundation.css"
-        rel="stylesheet">
-  <link href="app.css"
-        rel="stylesheet">
-  <link href="d3-context-menu.css"
-        rel="stylesheet">
+  <style type="text/css">
+        .node {
+            cursor: pointer;
+        }
+        
+        .overlay {
+            background-color: #EEE;
+        }
+        
+        .node circle {
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 1.5px;
+        }
+        
+        .node text {
+            font-size: 10px;
+            font-family: sans-serif;
+        }
+        
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 1.5px;
+        }
+        
+        .templink {
+            fill: none;
+            stroke: red;
+            stroke-width: 3px;
+        }
+        
+        .ghostCircle.show {
+            display: block;
+        }
+        
+        .ghostCircle,
+        .activeDrag .ghostCircle {
+            display: none;
+        }
+  </style>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="tree.js"></script>
   <title></title>
 </head>
 <body>
   <div id="tree-container"></div>
-  <script src="d3.v3.min.js"></script> 
-  <script src="dndTree.js"></script> 
-  <script src="d3-context-menu.js"></script> 
-  <script src="underscore-min.js"></script> 
-  <script src="jquery.js"></script> 
-  <script src="fastclick.js"></script> 
-  <script src="foundation.min.js"></script> 
-  <script>
-
-        // for the first initialization
-        $('document').ready(function() {
-                    $(document).foundation();
-                    $(document).on('opened', '[data-reveal]', function() {
-                        var element = $(".inputName:visible").first();
-                        element.focus(function() {
-                            this.selectionStart = this.selectionEnd = this.value.length;
-                        });
-                        element.focus();
-                    });
-                    var treeJSON = d3.json('raw_data'.json ', draw_tree);
-                    });
-  </script>
 </body>
 </html>
