@@ -1,32 +1,13 @@
 {
-    "Court Type": {
-        "Supreme Court": {
-            "Gender": {
-                "Female": {
-                    "Race or Ethnicity": {
-                        "White": {
-                            "judge": [
-                                "Elena Kagan "
-                            ]
-                        }
-                    }
+    "name": "Court Type",
+    "children": [
+        {
+            "name": "U.S. District Court",
+            "children": [
+                {
+                    "Gender": "Male"
                 }
-            }
+            ]
         }
-    },
-    "": {
-        "": {
-            "": {
-                "": {
-                    "": {
-                        "": {
-                            "judge": [
-                                "Xenophon Hicks "
-                            ]
-                        }
-                    }
-                }
-            }
-        }
-    }
+    ]
 }
