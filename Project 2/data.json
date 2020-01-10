@@ -1,0 +1,25 @@
+{
+    "name": "Court Type",
+    "children": [{
+            "name": "Supreme Court",
+            "children": [{
+                "name": "Gender",
+                "children": []
+            }]
+        },
+        {
+            "name": "U.S. Court of Appeals",
+            "children": [{
+                "name": "Gender",
+                "children": []
+            }]
+        },
+        {
+            "name": "U.S. District Court",
+            "children": [{
+                "name": "Gender",
+                "children": []
+            }]
+        }
+    ]
+}
